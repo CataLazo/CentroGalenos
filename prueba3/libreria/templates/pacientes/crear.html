@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block titulo %} Nuevo paciente {% endblock %}
+{% load static %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/pacientes.css' %}" type="text/css" media="screen">
+{% block contenido %}
+
+<div class="carta">
+    <div class="card">
+        <div class="card-header">
+            Agendar una Hora
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Datos</h4>
+            {% include 'pacientes/form.html' %}
+
+        </div>
+        <br>
+        <br>
+        <div class="card-footer text-muted">
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+{% endblock %}

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+
+.fondo {
+    background-color: #d6dee6;
+    height: 100%;
+}
+.menu>a{
+    color: #274e9c;
+}
+.links{
+    left: 20%;
+}
+
+.info {
+    background-color: #d6dbe0;
+    height: 50px;
+}
+
+.menu {
+    background-color: rgb(255, 255, 255);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#ContentItemCarrusel {
+    margin-top: 0.5%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.itemCarrusel {
+    top: 20px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.tajetaCarrusel {
+    background-color: aqua;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.flechasCarrusel {
+    background-color: rgba(127, 255, 212, 0);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 225px;
+}
+
+#tarjetaCarrusel-1 {
+    min-height: 100%;
+    background-size: contain;
+}
+
+#tarjetaCarrusel-2 {
+    min-height: 100%;
+    background-size: contain;
+}
+
+#tarjetaCarrusel-3 {
+    min-height: 100%;
+    background-size: contain;
+}
+
+.logoCentro {
+    height: 70px;
+    width: auto;
+}
+
+.container a {
+    color: #274e9c;
+}
+.container{
+    margin-top: 2.5rem;
+}
+
+img {
+    background-size: cover;
+}
+.pie-pagina {
+    width: 100%;
+    background-color: #87a2d5;
+}
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    grid-template-columns: repeat(4, 2fr);
+    justify-content: space-between;
+    padding: 35px 0px;
+    flex-direction: row;
+    margin-left: 400px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100px;
+    height: 100%;
+    display: flex;
+
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 100px;
+    margin-right: 40px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #ffff;
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pie-pagina .grupo-1 .box a {
+    color: #d6dee6;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    color: #d6dee6;
+}
+
+.dropdown-menu {
+    height: 50%;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    gap: 20px;
+
+}
+
+.contenedor-actividad {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.cartas {
+    border-radius: 10px;
+    height: 150px;
+    width: 200px;
+    font-weight: bold;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+
+    /*width: calc(33.33%-12px);*/
+}
+
+.cartas .items {
+    height: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartas i {
+    color: #162f64;
+    margin-top: .5rem;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.cartas h5 {
+    text-align: center;
+    text-size-adjust: 20px;
+
+}
+
+.cartas a {
+    color: #162f64;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .logoCentro {
+        margin-left: 0px;
+    }
+    .titulo{
+        display: none
+    }
+    .grupo-1{
+        display:none !important;
+    }
+    
+
+}
+
+/*INICIO HTML*/

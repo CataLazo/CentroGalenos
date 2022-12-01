@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+
+  font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+   
+    
+}
+
+
+.fondo{
+    background-color: #d6dee6;
+    height: 100%;
+    
+
+}
+
+.menu{
+    background-color: rgb(255, 255, 255);
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+
+
+.logoCentro{
+    height: 70px;
+    width: auto;
+    margin-left: 300px;
+    margin-top: 10px;
+    
+}
+.container a{
+    color: #274e9c;
+    text-decoration: none;
+}
+
+
+
+img{
+    background-size: cover;
+}
+
+
+.pie-pagina{
+    width: 100%;
+    background-color: #87a2d5;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+  
+    display: flex;
+    grid-template-columns: repeat(4, 2fr);
+    justify-content: space-between;
+    padding: 45px 0px;
+    flex-direction: row;
+    margin-left: 400px;
+
+
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 100px;
+    margin-right: 50px;
+
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #ffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.pie-pagina .grupo-1 .box a{
+    color: #d6dee6;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+ul{
+    list-style-type:none;
+    color: #d6dee6;
+}
+
+.dropdown-menu{
+    height: 50%;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    gap: 20px;
+
+}
+
+.contenedor-actividad{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.card{
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+
+    width: calc(33.33%-12px);
+}
+
+.card .items{
+    height: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card i{
+    color: #162f64;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.card h5{
+    text-align: center;
+    text-size-adjust: 20px;
+  
+}
+.card a{
+    color: #162f64;
+    text-decoration: none;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+}
+
+.perfil{
+    height: 600px;
+    width: 2000px;
+    text-align: center;
+    background-color: #a5a4ee3f;
+    border: 0.5px solid;
+
+}
+
+.horaMedica{
+    margin-top: 20px;
+    height: 300px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #a5a4ee3f;
+    border: 0.5px solid;
+    margin-left: 500px;
+}
+.informacion{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imagenP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: aliceblue;
+    height: 150px;
+
+}
+
+
+.datos{
+    margin-top: 50px;
+}
+
+.table, th, td{
+    border: 1px solid black;
+    
+    border-collapse: collapse;
+    
+}
+.table{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .logoCentro{
+       
+        margin-left: 0px;
+    }
+    .pie-pagina{
+        display: none;
+    }
+    
+}
