@@ -38,16 +38,25 @@ class consulta(models.Model):
     def __str__(self):
         fila = "Nombre: " + self.nombre + "-" + "Apellido: " + self.apellido + "-" + "Telefono: " + \
             self.telefono + "-" + "Medico" + self.medico + "-" + \
-             "Valor" + self.valor + "-" + "Razon" + self.razon + "-" + "Fecha" + self.fecha
+            "Valor" + self.valor + "-" + "Razon" + self.razon + "-" + "Fecha" + self.fecha
         return fila
 
+
 class user(models.Model):
-    rut = models.CharField(verbose_name='Rut')
-    nombre = models.CharField(verbose_name='Nombre completo')
-    telefono = models.IntegerField(verbose_name='Telefono')
-    direccion = models.CharField(verbose_name='Direccion')
+    rut = models.CharField(max_length=10,verbose_name='Rut')
+    nombre = models.CharField(max_length=100,verbose_name='Nombre completo')
+    telefono = models.IntegerField(max_length=100,verbose_name='Telefono')
+    direccion = models.CharField(max_length=100,verbose_name='Direccion')
     email = models.EmailField()
-    fechaDeNac = models.DateField(verbose_name='Selecciona tu fecha de nacimiento')
-    password1 = models.CharField(verbose_name='Contraseña')
-    password2 = models.CharField(verbose_name=' Confirma Contraseña')
-    bono = models.CharField(verbose_name='Fonasa o Isapre')
+    fechaDeNac = models.DateField(
+        verbose_name='Selecciona tu fecha de nacimiento')
+    password = models.CharField(max_length=100,verbose_name='Contraseña', null=True, blank=True)
+    password = models.CharField(max_length=100,  verbose_name=' Confirma Contraseña', null=True, blank=True)
+    bono = models.CharField(max_length=100, verbose_name='Fonasa o Isapre')
+
+    def __str__(self):
+        fila = "rut: " + self.rut + "-" + "Nombre: " + self.nombre + "-" + "Telefono: " + \
+            self.telefono + "-" + "direccion" + self.direccion + "-" + \
+            "email" + self.email + "-" + "fechaDeNac" + self.fechaDeNac + "-" + "password" + \
+            self.password + "-" + "password" + self.password + "-" + "bono" + self.bono
+        return fila

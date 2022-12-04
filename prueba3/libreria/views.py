@@ -52,7 +52,7 @@ def registro(request):
             messages.success(request, f'Usuario {username} creado')
             return redirect('inicio')
     else:
-        form = UserCreationForm()
+        form = UserRegisterForm()
     context = { 'form' : form }
     return render(request, 'pacientes/registro.html', context)
 
