@@ -31,18 +31,16 @@
                                 médicas, Exámenes y Laboratorio</a></li>
                         <li class="nav-item"><a href="{% url 'registro' %}" class="nav-link">Información al
                                 Paciente</a></li>
+                        
+                        {% if usernames %}
+                        {% for username in usernames %}
+                        <li class="nav-item"><i class="bi bi-person-fill">{{username}}</i></li>
+                        {% endfor %}
+                        {% endif %}
                     </ul>
                 </header>
             </div>
         </div>
-
-        {% if messages %}
-        {% for message in messages %}
-        <div class="notification {{ message.tags }}">
-            {{ message }}
-        </div>
-        {% endfor %}
-        {% endif %}
 
         <div class="container">
             {% block contenido %} {% endblock %}

@@ -42,21 +42,3 @@ class consulta(models.Model):
         return fila
 
 
-class user(models.Model):
-    rut = models.CharField(max_length=10,verbose_name='Rut')
-    nombre = models.CharField(max_length=100,verbose_name='Nombre completo')
-    telefono = models.IntegerField(max_length=100,verbose_name='Telefono')
-    direccion = models.CharField(max_length=100,verbose_name='Direccion')
-    email = models.EmailField()
-    fechaDeNac = models.DateField(
-        verbose_name='Selecciona tu fecha de nacimiento')
-    password = models.CharField(max_length=100,verbose_name='Contraseña', null=True, blank=True)
-    password = models.CharField(max_length=100,  verbose_name=' Confirma Contraseña', null=True, blank=True)
-    bono = models.CharField(max_length=100, verbose_name='Fonasa o Isapre')
-
-    def __str__(self):
-        fila = "rut: " + self.rut + "-" + "Nombre: " + self.nombre + "-" + "Telefono: " + \
-            self.telefono + "-" + "direccion" + self.direccion + "-" + \
-            "email" + self.email + "-" + "fechaDeNac" + self.fechaDeNac + "-" + "password" + \
-            self.password + "-" + "password" + self.password + "-" + "bono" + self.bono
-        return fila

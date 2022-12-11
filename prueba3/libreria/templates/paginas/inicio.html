@@ -8,6 +8,13 @@
 <link rel="stylesheet" href="{% static '/inicio.css' %}" type="text/css" media="screen">
 
 {% block contenido %}
+{% if messages %}
+{% for message in messages %}
+<div class="notification {{ message.tags }}">
+    {{ message }}
+</div>
+{% endfor %}
+{% endif %}
 
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -49,7 +56,7 @@
                 <i class="bi bi-file-text"></i>
                 <div class="items">
                     <a href="{% url 'pacientes' %}">
-                        <h5>Ver Mis Horas</h5> 
+                        <h5>Ver Mis Horas</h5>
                     </a>
                 </div>
             </div>

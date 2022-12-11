@@ -8,18 +8,5 @@
 <link rel="stylesheet" href="{% static '/registro.css' %}" type="text/css" media="screen">
 
 {% block contenido %}
-<div class="fondo">
-   <div class="form-login">
-      <form class="form" method="POST">
-         <h3>Registrarse</h3>
-         {% csrf_token %}
-
-         {{form.as_p}}
-
-         <button class="boton" type="submit" id="submit">
-            Registrarse
-         </button>
-      </form>
-   </div>
-</div>
+<h1>Te has logueado.</h1>
 {% endblock %}
